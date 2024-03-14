@@ -51,6 +51,10 @@ const addNewGoal = () => {
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
 
+    //An event listener to remove the goal when clicked
+    newGoal.addEventListener('click', () => {
+          newGoal.remove();
+    });
 
 };
 
